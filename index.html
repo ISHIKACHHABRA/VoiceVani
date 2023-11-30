@@ -3,42 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Vani</title>
+    <title>Vaani</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="bgimg">
+      
         <header>
             <nav>
           <!-- left side menu  -->
           <div class="left-side-menu">
-            <div class="logo">
+            <!-- <div class="logo">
               <a href="#">
                 <img src="./images/voicevaani_logo.jpg" alt="logo" />
               </a>
+            </div> -->
+
+            <div class="logo">
+              <a href="#">
+                <h1 class="display-3 pt-5" style="color: #004094;"><strong>VAANI</strong></h1>
+
+              </a>
             </div>
   
-            <div class="sub-menu">
+            <div class="sub-menu pt-5">
               <a href="#">
                 <li>Home</li>
               </a>
-              <a href="#section-two">
-                <li>About Us</li>
+              <a href="#section-third">
+                <li>Team</li>
               </a>
               <a href="#section-features">
                 <li>Features</li>
               </a>
-              <a href="./html/signup.html">
+              <!-- <a href="./html/signup.html">
                 <li>Voice Cloning</li>
-              </a>
+              </a> -->
               <a href="#section-four">
-                <li>TTS</li>
+                <li>Model</li>
               </a>
             </div>
           </div>
           <!-- right side menu  -->
-          <div class="right-side-menu">
+          <!-- <div class="right-side-menu">
             <div class="sub-menu">
               <a href="./html/login.html">
                 <li>Log In</li>
@@ -50,22 +59,25 @@
                 <button>Go to Dashboard</button>
               </a>
             </div>
-          </div>
+          </div> -->
         </nav>
         </header>
 
       <div class="heading">
-            <div class="left-side">
+            <div class="left-side mb-5">
                 <img src="./images/ai-micpng.png" alt="">
             </div>
 
             <div class="right-side">
     
-                <h2>Unlock Limitless Possibilities: Harness the Power of Voice Cloning for Your Creative Ventures.</h2>
+                <b><h3>Harness the Power of Voice Cloning</b></h3>
                 <p>Whether you're a content creator, filmmaker, or storyteller, our cutting-edge technology allows you to capture the essence of any voice and infuse it into your creations. From generating voiceovers that match your vision to preserving the legacy of loved ones, our voice cloning tool opens doors to a world of endless opportunities. Step into a realm where imagination knows no bounds, and experience the true power of voice cloning yourself.</p>
                 <div class="button-group">
-                  <a href="./html/signup.html">
+                  <!-- <a href="./html/signup.html">
                     <button>Try for free</button>
+                  </a> -->
+                  <a href="#section-four">
+                    <button class="btn btn-primary rounded-rectangle btn-lg">Try Our Model</button>
                   </a>
                 </div>
             </div>
@@ -75,9 +87,9 @@
     <!-- ------------Section 3--------- -->
 
     <section class="section-third" id="section-third">
-      <h2>Discover a range of voices cloned using Voice-Vani</h2>
+      <h2>Our Team</h2>
       <div class="section-third-task">
-        <div class="task-1">
+        <div class="task-3">
           <img src="images/ranasir.jpg" alt="icon1" />
           <h3>Prashant Singh Rana</h3>
           <p>
@@ -88,7 +100,7 @@
           </audio>
         </div>
 
-        <div class="task-2">
+        <div class="task-3">
           <img src="images/isha.jpg" alt="icon1" />
           <h3>Ishika Chhabra</h3>
           <p>
@@ -109,6 +121,40 @@
             <source src="./Recording/1.wav" type="audio/mpeg">
           </audio>
         </div>
+
+        <div class="task-3">
+          <img src="images/ranasir.jpg" alt="icon1" />
+          <h3>Prashant Singh Rana</h3>
+          <p>
+            Professor | Thapar Institute of Engineering and Technology, Patiala
+          </p>
+          <audio controls>
+            <source src="./Recording/1.wav" type="audio/mpeg">
+          </audio>
+        </div>
+
+        <div class="task-3">
+          <img src="images/isha.jpg" alt="icon1" />
+          <h3>Ishika Chhabra</h3>
+          <p>
+            Student | Thapar Institute of Engineering and Technology, Patiala
+          </p>
+          <audio controls>
+            <source src="./Recording/1.wav" type="audio/mpeg">
+          </audio>
+        </div>
+
+        <div class="task-3">
+          <img src="images/tushar.jpg" alt="icon1" />
+          <h3>Tushar Singh</h3>
+          <p>
+            Student | Thapar Institute of Engineering and Technology, Patiala
+          </p>
+          <audio controls>
+            <source src="./Recording/1.wav" type="audio/mpeg">
+          </audio>
+        </div>
+
       </div>
     </section>
 
@@ -175,12 +221,12 @@
       <div class="section-forth-task">
         <div class="left-4">
           <form>
-            <textarea id="section4" cols="70" rows="30" spellcheck="false" placeholder="Enter the description here"></textarea>
+            <textarea id="text-input" cols="70" rows="30" spellcheck="false" placeholder="Enter the description here"></textarea>
           </form>
         </div>
 
         <div class="mid-4">
-          <button>listen</button>
+          <button id="listen_backend">listen</button>
         </div>
 
         <div class="right-4">
@@ -256,5 +302,11 @@
         </div>
       </div>
     </footer>
+
+
+    <script src="js/index.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js" integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 </body>
 </html>
